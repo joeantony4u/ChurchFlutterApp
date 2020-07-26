@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title> 
+</head>
+<body>
+<h1>Upload new Photo</h1>
+<form method="POST" action="/photos/add" enctype="multipart/form-data">
+    Title:<input type="text" name="title" />
+    Image:<input type="file" name="image" accept="image/*" />
+    <input type="submit" value="Upload" />
+</form>
+</body>
+</html>
